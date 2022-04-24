@@ -12,14 +12,14 @@ struct HomeView: View {
             HStack(alignment: .center) {
                 Spacer()
                 Spacer()
-//                NavigationLink(destination: SurfView()) {
+                NavigationLink(destination: SurfView()) {
                     HomeButton(
                         color: Color("GreenLight"),
                         borderColor: Color("Green"),
                         imageName: "Surfing",
                         size: UIScreen.width / 4
                     )
-//                }
+                }
                 Spacer()
 //                NavigationLink(destination: SoccerView()) {
                     HomeButton(
@@ -43,6 +43,10 @@ struct HomeView: View {
             }
             .frame(height: UIScreen.width / 4)
             Spacer()
+            Text("Please lock your screen\norientation in a portrait mode!")
+                .font(.system(size: UIScreen.width / 20, weight: .medium, design: .rounded))
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color("Gold"))
             Spacer()
         }
         .expand()
