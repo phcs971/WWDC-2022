@@ -21,14 +21,14 @@ struct HomeView: View {
                     )
                 }
                 Spacer()
-//                NavigationLink(destination: SoccerView()) {
+                NavigationLink(destination: SoccerView()) {
                     HomeButton(
                         color: Color("BlueLight"),
                         borderColor: Color("Blue"),
                         imageName: "Soccer",
                         size: UIScreen.width / 4
                     )
-//                }
+                }
                 Spacer()
 //                NavigationLink(destination: ArcheryView()) {
                     HomeButton(
