@@ -27,14 +27,19 @@ let package = Package(
                 .phone
             ],
             supportedInterfaceOrientations: [
-                .portrait,
-            ]
+                .portrait
+            ],
+            capabilities: [
+                .camera(purposeString: "The app needs your camera to capture your motion!")
+            ],
+            additionalInfoPlistContentFilePath: "ExtraInfo.plist"
         )
     ],
     targets: [
         .executableTarget(
             name: "AppModule",
             path: ".",
+            exclude: ["ExtraInfo.plist"],
             resources: [
                 .process("Resources")
             ]
