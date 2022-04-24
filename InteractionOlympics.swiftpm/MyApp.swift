@@ -14,8 +14,7 @@ struct AppView: View {
     @State var landscape = false
     var body: some View {
         NavigationView {
-            Text("OI")
-//            HomeView()
+            HomeView()
 //            SurfView()
 //            SoccerView()
 //            ArcheryView()
